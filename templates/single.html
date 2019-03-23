@@ -1,0 +1,193 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block body %}
+{% with request.resolver_match.url_name as url_name %}
+
+
+				<div class="row">
+					<!-- HOME CONTENT START -->
+					<div class="home-content">
+						<!-- SITE CONTENT LEFT START -->
+						<div class="col-sm-8 col-xs-12 site-content-left">
+							<!-- POST START -->
+							<div class="page-content">
+								<article class="post format-standard">
+									<!-- POST HEADER START -->
+									<div class="post-header">
+
+										<div align="center"><h1>{{ content.title }}</h1> </div>
+									</div><div class="post-entry clearfix">
+										<p></p>
+
+                                    </div>
+ <!-- skill_auto -->
+
+  <br/>
+									<!-- POST HEADER END -->
+									<!-- POST IMAGE START -->
+									{% if url_name == 'funny' %}
+									<script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+
+									<!-- Your embedded video player code -->
+
+									<div class="fb-video" data-href="{{ content.video_embed_code|safe }}" data-width="100" data-height="50" data-show-text="false">
+		</div>
+									{% else %}
+									<div class="post-img" align="center">
+
+									<img src="{{ content.picture.url }}" />
+									{% endif %}
+									</div>
+									<div id="fb-root"></div>
+								 <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+
+								 <div class="container">
+
+<div class="">
+
+
+<div class="fb-like" data-href="{{ request.build_absolute_uri }}" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="false">
+</div>
+{{ request.build_absolute_uri }}
+<div class="fb-share-button" data-href="{{ request.build_absolute_uri }}" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fajairahouse.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a>
+</div>
+</div>
+ 					 <div class="fb-comments" data-href="http://127.0.0.1:8080/{{ request.path }}"  data-width="350" data-numposts="5"></div>
+ 									<!-- POST IMAGE END -->
+									</div>
+									<!-- POST ENTRY START -->
+                                                                        <p> </p>
+
+																		<!-- POST ENTRY END -->
+									<!--Navs-->
+
+
+                                </article>
+							</div>
+							<div id="fb-root"></div>
+
+							<!-- POST END -->
+							<!-- ADVERT START -->
+							<div class="home-post-bottom-advert advert">
+								<!--<p>
+skill							  </p></br></br>-->
+
+</br>
+
+								<p></p>
+                                <br/><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+                                <br/>
+                                				        </div>
+							<!-- ADVERT END -->
+						</div>
+						<!-- SITE CONTENT LEFT END -->
+						<!-- SITE CONTENT RIGHT START -->
+						<div class="col-sm-4 col-xs-12 site-content-right">
+							<aside class="sidebar-right sidebar">
+
+
+								<!-- WIDGET START -->
+<div class="sidebar-right-wrap widget-box widget_vintaug_latest_latest_posts_widget">
+									<div class="widget-title">
+										<h3 class="bg-heading">Top Rated list
+                                        </h3>
+
+
+									</div>
+								<div class="sidebar-right-wrap widget-box widget_text sidebar-post-wraper">
+
+
+                  <div class="col-sm-6">
+									<div class="post-heading">
+											<a href="{% url 'bangla' pk=bangla.pk %}"><button><h5>{{ bangla.title }}<h5></button></a>
+										</div>
+										<div class="image">
+											<a href="{% url 'bangla' pk=bangla.pk %}"><img src="{{ bangla.picture.url }}" alt="{{ bangla.title }}" width="131" height="160" /></a>
+										</div>
+										<div class="desc">
+											<p></p>
+										</div>
+									</div>
+
+
+										<div class="col-sm-6">
+										<div class="post-heading">
+												<a href="{% url 'engineer' pk=engineer.pk %}"><button><h5>{{ engineer.title }}<h5></button></a>
+											</div>
+											<div class="image">
+												<a href="{% url 'engineer' pk=engineer.pk %}"><img src="{{ engineer.picture.url }}" alt="{{ engineer.title }}" width="131" height="160" /></a>
+											</div>
+											<div class="desc">
+												<p></p>
+											</div>
+										</div>
+
+
+											<div class="col-sm-6">
+											<div class="post-heading">
+													<a href="{% url 'fci' pk=fci.pk %}"><button><h5>{{ fci.title }}<h5></button></a>
+												</div>
+												<div class="image">
+													<a href="{% url 'fci' pk=fci.pk %}"><img src="{{ fci.picture.url }}" alt="{{ fci.title }}" width="131" height="160" /></a>
+												</div>
+												<div class="desc">
+													<p></p>
+												</div>
+											</div>
+
+
+												<div class="col-sm-6">
+												<div class="post-heading">
+														<a href="{% url 'funny' pk=funny.pk %}"><button><h5>{{ funny.title }}<h5></button></a>
+													</div>
+													<div class="image">
+														<a href="{% url 'funny' pk=funny.pk %}">
+															<iframe width="200" height="150" src="{{ funny.video_embed_code }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+
+														</a>
+													</div>
+													<div class="desc">
+														<p></p>
+													</div>
+												</div>
+
+
+
+													<div class="col-sm-6">
+													<div class="post-heading">
+															<a href="{% url 'programming' pk=programming.pk %}"><button><h5>{{ programming.title }}<h5></button></a>
+														</div>
+														<div class="image">
+															<a href="{% url 'programming' pk=programming.pk %}"><img src="{{ programming.picture.url }}" alt="{{ programming.title }}" width="131" height="160" /></a>
+														</div>
+														<div class="desc">
+															<p></p>
+														</div>
+													</div>
+
+
+
+
+                                </div>
+                                <!-- WIDGET END -->
+
+							</aside>
+						</div>
+						<!-- SITE CONTENT RIGHT END -->
+					</div>
+					<!-- HOME CONTENT END -->
+				</div>
+			</div>
+
+            <div class="bottom-posts">
+            	<div class="container">
+
+
+                </div><!-- container end here -->
+            </div><!-- bottom-posts end here -->
+        </div>
+	{% endwith %}
+{% endblock %}

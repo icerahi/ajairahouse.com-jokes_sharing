@@ -1,0 +1,755 @@
+/* Basic stuff
+----------------------------------------------------------------------------------------------------*/
+
+html {
+	/*margin-left:-1px;
+	overflow-y:scroll;*/
+	}
+
+body {
+	background: url(http://demo.mattiaviviani.com/synthetik/skin1/images/bg.png) repeat;
+	color:#000;
+	font-family: 'Lucida Grande', 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	}
+
+h1 {font-size: 25px;}
+h2 {font-size: 23px;}
+h3 {font-size: 21px;}
+h4 {font-size: 19px;}
+h5 {font-size: 17px;}
+h6 {font-size: 15px;}
+
+a {color:#444;}
+a:hover {color:#39c;}
+	
+.textLink {color:#39c;}
+.textLink:hover {color:#1e2229;}
+
+.lineHor {
+	border-bottom:#c0c0c0 1px dashed;
+	margin-top:25px;
+	margin-bottom:25px;
+	}
+
+.alignleft {
+	float:right;
+	margin:20px 0 0 15px;
+	}
+
+/* List
+----------------------------------------------------------------------------------------------------*/
+
+div#list {
+	margin-top:15px;
+	margin-bottom:15px;
+	}
+
+.listStyle ul li {
+	list-style:disc inside;
+	color:#39c;
+	line-height:25px;
+	text-decoration:none;
+	}
+
+.listStyle ul li a {
+	color:#1e2229;
+	text-decoration:none;
+	}
+	
+.listStyle ul li a:hover {
+	text-decoration:underline;
+	color:#1e2229;
+	}
+
+
+/* Header
+----------------------------------------------------------------------------------------------------*/
+
+#header-wrap {
+	background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/topnavBG.png) center 64px no-repeat;
+	padding-bottom:1px;
+	}
+
+#header {}
+	
+#topnav {
+	padding-top:0;
+	padding-left:10px;
+	margin-top:20px;
+	margin-bottom:5px;
+	height:40px;
+	}
+	
+#topnav ul li {display:inline-block;}
+
+#topnav ul li .current {
+	color:#39c;
+	background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/topnavBG.png) -100px -76px no-repeat;
+	}
+
+#topnav ul li .currentHome {
+	width:30px;
+	margin-left:-5px;
+	text-indent:-9999px;
+	background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/topnavBG.png) -10px -76px no-repeat;
+	}
+
+.home {
+	width:30px;
+	margin-left:-5px;
+	text-indent:-9999px;
+	}
+
+a.home:hover {
+	width:30px;
+	text-indent:-9999px;
+	background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/topnavBG.png) -10px -76px no-repeat;
+	}
+
+#topnav ul li .navEffect {
+	width:60px;
+	margin-left:1px;
+	}
+
+#topnav ul li .navEffect:hover {
+	width:60px;
+	margin-left:1px;
+	background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/topnavBG.png) -100px -76px no-repeat;
+	}
+
+
+#logo {
+	margin-top:20px;
+	background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/logo.png) no-repeat;
+	text-indent:-9999px;
+	width:220px;
+	height:50px;
+	display:block;
+	}
+
+#siteSearch, #siteSearchForm {
+	float:right;
+	margin-top:12px;
+	margin-right:5px;
+	}
+
+#searchImput {
+	background:transparent;
+	border:none;
+	height:25px;
+	width:170px;
+	margin-top:1px;
+	color:#888;
+	}
+
+#searchSubmit {
+	border:none;
+	height:20px;
+	width:28px;
+	cursor:pointer;
+	background:transparent;
+	margin-right:5px;
+	outline:0;
+	}
+	
+
+/* Featured
+----------------------------------------------------------------------------------------------------*/
+
+#featured-wrap {
+	height:450px;
+	background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/sliderBG.png) center -10px no-repeat;
+	}
+	
+#featured {
+	margin-top:10px;
+	position:relative;	/* !IMPORTANT for slider */
+	}
+
+
+/* Services
+----------------------------------------------------------------------------------------------------*/
+
+#services-wrap {background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/contentBGhome_center.png) center 30px repeat-y;}
+#services {padding-bottom:10px;}
+	
+#servicesTop {
+	height:30px;
+	background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/contentBGhome_top.png) center top no-repeat;
+	}
+
+#box1, #box2, #box3 {
+	margin:5px 0 20px 30px;
+	color:#ddd;
+	font-size:11px;
+	}
+	
+#box.right {margin-right:0;}
+
+#box1 h5, #box2 h5, #box3 h5 {
+	margin-top:0;
+	padding-bottom:10px;
+	border-bottom:#1e2229 1px solid;
+	}
+
+#box1 p, #box2 p, #box3 p {
+	margin-top:10px;
+	margin-bottom:10px;
+	}
+
+#box1 a, #box2 a, #box3 a {color:#39c;}
+#box1 a:hover, #box2 a:hover, #box3 a:hover {color:#fff;}
+
+/* Get in Touch */
+.getInTouch {line-height:15px;}
+
+#box1 .getInTouch p, #box2 .getInTouch p, #box3 .getInTouch p {margin-top:5px;}
+	
+#box1 .socialIcons, #box2 .socialIcons, #box3 .socialIcons {
+	margin:20px 0 5px 0;
+	border-top:#1e2229 1px solid;
+	/*border-bottom:#1e2229 1px solid;*/
+	padding-top:20px;
+	padding-bottom:15px;
+	}
+
+#box2 a.category, #box2 a.comments {background:#39c;color:#fff;}
+#box2 a.category:hover, #box2 a.comments:hover {background:#fff;color:#1e2229;padding:2px 4px 2px 4px;}
+
+#comments a {
+	margin-top:-30px;
+	margin-left:-7px;
+	position:absolute;
+	width:auto;
+	font-size:13px;
+	display:block;
+	}
+
+#box3 .socialIcons ul li {display:inline-block;}
+#box3 .socialIcons ul li a {
+	display:inline-block;
+	padding:0 8px 5px 0;
+	}
+
+.goForm {
+	background:transparent url(../images/right.png) 11px 10px no-repeat;
+	padding-left:50px;
+	padding-top:10px;
+	}
+
+.getInTouch ul li.phoneContact, .getInTouch ul li.emailContact, .getInTouch ul li.addressContact, .getInTouch ul li.skypeContact {
+	padding-left:50px;
+	padding-top:10px;
+	margin-bottom:10px;
+	}
+	
+.getInTouch ul li.phoneContact {background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/phone.png) 6px 10px no-repeat;}
+.getInTouch ul li.emailContact {background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/email.png) 3px 10px no-repeat;}
+.getInTouch ul li.skypeContact {background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/skype.png) 3px 11px no-repeat;}
+.getInTouch ul li.addressContact {background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/home.png) 3px 10px no-repeat;}
+
+
+/* Get in Touch Right Column */
+.getInTouch.right {
+	margin-top:10px;
+	padding:5px 20px 5px 20px;
+	}
+	
+.getInTouch p {margin-bottom:10px;}
+.getInTouch.right h6 {color:#444;}
+	
+.getInTouch.right ul li.phoneContact {background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/phone_gray.png) 3px 10px no-repeat;}
+.getInTouch.right ul li.emailContact {background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/email_gray.png) 0 10px no-repeat;}
+.getInTouch.right ul li.skypeContact {background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/skype_gray.png) 0 11px no-repeat;}
+.getInTouch.right ul li.addressContact {background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/home_gray.png) 0 10px no-repeat;}
+
+
+/* Page Content Left
+----------------------------------------------------------------------------------------------------*/
+
+#content-wrap {background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/contentBGcenter.png) center 30px repeat-y;}
+
+#content {padding-bottom:20px;}
+#content h1, h2, h3, h4, h5, h6 {margin-top:10px;margin-bottom:10px;}
+	
+#contentTop {
+	height:30px;
+	background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/contentBGtop.png) center no-repeat;
+	}
+
+#contentLeft {
+	margin-left:30px;
+	margin-right:20px;
+	}
+
+#contentLeft p {
+	margin-top:10px;
+	margin-bottom:10px;
+	}
+
+#contentLeft .path, #contentPortfolio .path {
+	font-size:11px;
+	padding-bottom:10px;
+	margin-bottom:15px;
+	color:#888;
+	border-bottom:#ddd 1px solid;
+	}
+
+#contentLeft .path a, #contentPortfolio .path a {
+	color:#888;
+	text-decoration:none;
+	}
+
+#contentLeft .path a:hover, #contentPortfolio .path a:hover {
+	color:#444;
+	text-decoration:none;
+	}
+
+
+/* Sidebar Right
+----------------------------------------------------------------------------------------------------*/
+
+#contentRight {
+	margin-top:10px;
+	padding-bottom:20px;
+	background:#fff;
+	border:#ddd 1px solid;
+	color:#999;
+	font-size:11px;
+	width:290px;
+
+	/* CSS3 Rounded Corners */
+	-moz-border-radius-topleft:6px;
+	-webkit-border-top-left-radius:6px;
+	border-top-left-radius:6px;
+		
+	-moz-border-radius-topright:6px;
+	-webkit-border-top-right-radius:6px;
+	border-top-right-radius:6px;
+		
+	-moz-border-radius-bottomleft:6px;
+	-webkit-border-bottom-left-radius:6px;
+	border-bottom-left-radius:6px;
+		
+	-moz-border-radius-bottomright:6px;
+	-webkit-border-bottom-right-radius:6px;
+	border-bottom-right-radius:6px;
+	}
+		
+.rightContent {padding:15px 20px 20px 20px;}
+
+.rightContent h5 {
+	margin:5px 0 5px 0;
+	color:#444;
+	}
+
+.imgRight {padding:10px 10px 5px 15px;}
+
+.socialRight ul li {display:inline-block;}
+.socialRight ul li a {padding:0;}
+
+.socialRight {
+	margin:20px 15px 10px 20px;
+	padding:20px 20px 15px 20px;
+	border:#e8e8e8 1px solid;
+	background:#f9f9f9;
+	display:block;
+	}
+	
+#contentRight .social {padding:0;}
+
+
+/*  Sub Navigation - sidebar contentRight
+----------------------------------------------------------------------------------------------------*/
+
+#subNavigation {
+	margin:20px 20px 25px 20px;
+	font-size:12px;
+	padding-top:30px;
+	border-top:1px solid #ddd;
+	}
+
+#subNavigation h5 {
+	margin:0;
+	padding:0 0 10px 0;
+	color:#444;
+	border-bottom:1px solid #ddd;
+	}
+		
+#subNavigation ul {
+	color:#39c;
+	margin:0;
+	border:none;
+	line-height:35px;
+	}
+
+#subNavigation li {
+	border-bottom:1px solid #ddd;
+	margin:0;
+	}
+
+#subNavigation li a {
+	display:block;
+	padding-left:10px;
+	text-decoration:none;
+	background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/subNav.png) top no-repeat;
+	}	
+
+#subNavigation li a:hover {
+	color:#fff;
+	background:#39c;
+	font-weight:bold;
+	background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/subNav.png) bottom no-repeat;
+	}
+
+
+/* Portfolio
+----------------------------------------------------------------------------------------------------*/
+
+/* .path class with #contentLeft  */
+#contentPortfolio {
+	margin-left:30px;
+	width:900px;
+	font-size:11px;
+	}
+	
+#boxPortfolio1, #boxPortfolio2, #boxPortfolio3, #boxPortfolio4, #boxPortfolio5, #boxPortfolio6,
+#boxPortfolio7, #boxPortfolio8, #boxPortfolio9 {
+	margin:10px 30px 20px 0;
+	}
+#boxPortfolio1.right, #boxPortfolio2.right, #boxPortfolio3.right, #boxPortfolio4.right, #boxPortfolio5.right,
+#boxPortfolio6.right, #boxPortfolio7.right, #boxPortfolio8.right, #boxPortfolio9.right {margin-right:0;}
+
+#boxPortfolio1 p, #boxPortfolio2 p, #boxPortfolio3 p, #boxPortfolio4 p, #boxPortfolio5 p, #boxPortfolio6 p, #boxPortfolio7 p, #boxPortfolio8 p, #boxPortfolio9 p {
+	margin-top:0;
+	margin-bottom:10px;
+	}
+	
+#boxPortfolio1 h5, #boxPortfolio2 h5, #boxPortfolio3 h5, #boxPortfolio4 h5, #boxPortfolio5 h5, #boxPortfolio6 h5, #boxPortfolio7 h5, #boxPortfolio8 h5, #boxPortfolio9 h5 {
+	margin-top:5px;
+	padding-bottom:0;
+	}
+
+.project_hoverPhoto, .project_hoverVideo {
+	background:url(http://demo.mattiaviviani.com/synthetik/skin1/images/spacer.gif) repeat scroll 0 0 transparent;
+	display:block;
+	height:140px;
+	position:absolute;
+	width:280px;
+	z-index:5;
+	}
+
+.project_hoverPhoto:hover {background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/overPhoto.png) scroll 0 0 no-repeat;}
+.project_hoverVideo:hover {background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/overVideo.png) scroll 0 0 no-repeat;}
+
+
+/*--- prettyPhoto ---*/
+.currentTextHolder {
+	font-size:11px;
+	font-weight:bold;
+	color:#101319;
+	}
+
+
+/* Pagination
+----------------------------------------------------------------------------------------------------*/
+
+#pagination {
+	width:900px;
+	margin:30px 0 0 30px;
+	z-index:3;
+	font-size:11px;
+	padding-top:10px;
+	border-top:#ddd 1px solid;
+	}
+
+#pagination span, #pagination a {
+	display:block;
+	float:left;
+	line-height:12px;	/* modify heigh of span container (background) */
+	margin:2px 2px 2px 0;
+	padding:3px 6px;
+	text-decoration:none;
+	width:auto;
+	height:auto;
+	}
+
+#pagination a:hover {
+	background:#39c;
+	color:#fff;
+	}
+
+#pagination .current {
+	color:#fff;
+	padding:3px 6px;
+	background:#101319;
+	}
+
+
+/* Blog
+----------------------------------------------------------------------------------------------------*/
+
+.entryHead, .tags {
+	margin-top:10px;
+	margin-bottom:12px;
+	font-size:11px;
+	}
+
+.category, .comments {
+	cursor:pointer;
+	padding:2px 4px 2px 4px;
+	margin:0 4px 0 4px;
+	}
+	
+a.category, a.comments {
+	background:#39c;
+	color:#fff;
+	}
+	
+a.category:hover, a.comments:hover {
+	background:#1e2229;
+	padding:2px 4px 2px 4px;
+	}
+
+.date {}
+
+.tags {
+	margin-top:30px;
+	margin-bottom:20px;
+	font-size:11px;
+	padding-left:30px;
+	height:20px;
+	background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/tag.png) no-repeat;
+	}
+
+.tag {
+	color:#888;
+	cursor:pointer;
+	margin:0 4px 0 4px;
+	}
+
+a.tag {text-decoration:underline;}
+
+a.tag:hover {
+	text-decoration:underline;
+	margin:0 4px 0 4px;
+	}
+
+.share {
+	float:right;
+	color:#888;
+	cursor:pointer;
+	margin:0 4px 0 4px;
+	padding:0 6px 0 6px;
+	border:#c0c0c0 1px solid;
+	background:#fff;
+	}
+	
+a.share:hover {color:#444;}	/*6faf0b*/
+
+.facebook {background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/social.png) top left no-repeat;}
+a.facebook:hover {background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/social.png) bottom left no-repeat;}
+.twitter {background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/social.png) top right no-repeat;}
+a.twitter:hover {background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/social.png) bottom right no-repeat;}
+
+.facebook, .twitter {
+	text-indent:-9999px;
+	border:none;
+	margin-top:1px;
+	height:16px;
+	width:14px;	/* not 16px because of padding 1px left and 1px right*/
+	padding:0 1px 0 1px;
+	}
+
+#authorComment1, #authorComment2, #authorComment3 {
+	padding-top:25px;
+	padding-bottom:25px;
+	border-top:#ddd 1px solid;
+	border-bottom:#ddd 1px solid;
+	}
+
+#commentText1, #commentText2, #commentText3 {
+	margin:0;
+	padding-left:90px;
+	color:#888;
+	}
+	
+#gravatar1, #gravatar2, #gravatar3 {
+	width:60px;
+	font-size:11px;
+	text-align:center;
+	color:#888;
+	}
+
+#gravatar1 img, #gravatar2 img, #gravatar3 img {
+	border:#ddd 1px solid;
+	padding:4px;
+	}
+
+.replyHead {
+	color:#888;
+	font-size:11px;
+	}
+
+.author, .reply {
+	margin:0 4px 0 4px;
+	font-weight:bold;
+	cursor:pointer;
+	color:#444;
+	}
+
+a.author:hover, a.reply:hover {color:#888;}
+
+#quote1, #quote2, #quote3 {padding:10px 0 0 88px;}
+
+.quote {
+	color:#39c;
+	font-size:11px;
+	cursor:pointer;
+	padding:2px 6px 2px 6px;
+	border:#c0c0c0 1px solid;
+	}
+	
+.quote:hover {
+	color:#fff;
+	background:#39c;
+	border:#39c 1px solid;
+	}
+		
+.quoteText {
+	padding:10px 15px 10px 15px;
+	margin-bottom:15px;
+	background:#fbfbfb;
+	border:#ebebeb 1px solid;
+	font-style:italic;
+	color:#999;
+	font-size:11px;
+	}
+	
+
+/* Form style
+----------------------------------------------------------------------------------------------------*/
+
+#respond, #contactForm {margin:10px 0 20px 0;}
+
+#done {
+	background:transparent url(../images/done.png) top left no-repeat;
+	padding-top:1px;
+	padding-left:110px;
+	height:85px;
+	}
+
+.leftSpace {
+	font-size:11px;
+	margin-left:10px;
+	}
+
+.n {margin-left:0;}
+	
+.text_input, .text_area {
+	border:1px solid #c0c0c0;
+	padding:4px;
+	margin-top:10px;
+	font-family: 'Lucida Grande', 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+	font-size:12px;
+	background:#f1f1f1;	/*fefbef*/
+	color:#444;
+	width:250px;
+	}
+
+.text_area {margin-top:10px;width:570px;}
+
+input:focus, textarea:focus {background:#fff;}	/*fdf6dc*/
+
+#submit {
+	border:#111 1px solid;
+	background:#1e2229;
+	color:#fff;
+	font-weight:bold;
+	width:120px;
+	height:30px;
+	margin-top:10px;
+	font-size:12px;
+	padding-bottom:2px;
+	outline:0;
+	}
+
+#submit:hover {
+	border:1px solid #39c;
+	background:#39c;
+	cursor:pointer;
+	outline:0;
+	}
+
+.error.required {border:1px solid #c30;}
+
+/* Footer
+----------------------------------------------------------------------------------------------------*/
+
+#footer-wrap {
+	height:45px;
+	background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/contentBGfooter.png) center no-repeat;
+	}
+	
+#footer {}
+
+
+/* Bottom
+----------------------------------------------------------------------------------------------------*/
+
+#bottom-wrap {
+	height:50px;
+	background:transparent url(http://demo.mattiaviviani.com/synthetik/skin1/images/bottomBG.png) center no-repeat;
+	margin-bottom:20px;
+	}
+
+#bottom {
+	padding-top:18px;
+	font-size:11px;
+	color:#888;
+	}
+
+#bottom p {
+	margin-left:15px;
+	display:inline;
+	}
+
+#bottom p a {color:#888;}
+	
+#bottom p a:hover {
+	text-decoration:underline;
+	color:#ccc;
+	}
+
+#bottom ul li p a {text-decoration:underline;}
+#bottom ul li p a:hover {color:#ddd;}
+
+#bottom ul {
+	float:right;
+	margin-right:10px;
+	}
+
+#bottom ul li {
+	display:inline-block;
+	padding-right:7px;
+	padding-left:5px;
+	border-right:#333 1px solid;
+	}
+
+#bottom ul li a {
+	text-decoration:none;
+	font-size:11px;
+	color:#888;
+	}
+	
+#bottom ul li a:hover {text-decoration:underline;}
+	
+#bottom ul li.top {
+	border-right:none;
+	margin-right:5px;
+	margin-left:-5px;
+	}
+
+	

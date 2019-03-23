@@ -1,0 +1,252 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+<div class="site-content-wrapper">
+			<div class="container">
+            	<!-- CATEGORY TITLE START -->
+
+				<!-- CATEGORY TITLE END -->
+				<div class="row">
+					<!-- HOME CONTENT START -->
+					<div class="home-content">
+						<!-- SITE CONTENT LEFT START -->
+						<div class="col-sm-8 col-xs-12 site-content-left">
+
+                            <!-- POST LIST START -->
+										<div class="gall" >
+							<div class="home-two-post-list">
+				                <!-- POST START -->
+                                <div id="page_contents">
+
+
+
+																	<div class="home-post-list">
+																	    <!-- POST START -->
+
+																	    <article class="post format-standard">
+																	                        <div class="image">
+																	        <a href="{% url 'bangla' pk=bangla.pk %}"><img src="{{ bangla.picture.url }}" alt="{{ bangla.title }}" /></a>
+																	      </div>
+																	      <div class="desc">
+																	        <div class="post-desc-top">
+																	          <h3 class="post-heading">{{ bangla.title }}</h3>
+																	        </div>
+																	        <div class="post-desc-bottom">
+																	          <p></p>
+																	          <a class="more-button" href="{% url 'bangla' pk=bangla.pk %}"><span>Read More</span></a>
+																	        </div>
+																	      </div>
+																	    </article>
+																	  </div>
+																	  <div class="home-post-list">
+																	      <!-- POST START -->
+																	      <article class="post format-standard">
+																	                          <div class="image">
+																	          <a href="{% url 'engineer' pk=engineer.pk %}"><img src="{{ engineer.picture.url }}" alt="{{ engineer.title }}" /></a>
+																	        </div>
+																	        <div class="desc">
+																	          <div class="post-desc-top">
+																	            <h3 class="post-heading">{{ engineer.title }}</h3>
+																	          </div>
+																	          <div class="post-desc-bottom">
+																	            <p></p>
+																	            <a class="more-button" href="{% url 'engineer' pk=engineer.pk %}"><span>Read More</span></a>
+																	          </div>
+																	        </div>
+																	      </article>
+																	    </div>
+
+																	    <div class="home-post-list">
+																	        <!-- POST START -->
+																	        <article class="post format-standard">
+																	                            <div class="image">
+																	            <a href="{% url 'fci' pk=fci.pk %}"><img src="{{ fci.picture.url }}" alt="{{ fci.title }}" /></a>
+																	          </div>
+																	          <div class="desc">
+																	            <div class="post-desc-top">
+																	              <h3 class="post-heading">{{ fci.title }}</h3>
+																	            </div>
+																	            <div class="post-desc-bottom">
+																	              <p></p>
+																	              <a class="more-button" href="{% url 'fci' pk=fci.pk %}"><span>Read More</span></a>
+																	            </div>
+																	          </div>
+																	        </article>
+																	      </div>
+																	      <div class="home-post-list">
+																	          <!-- POST START -->
+																	          <article class="post format-standard">
+																	                              <div class="image">
+																	              <a href="{% url 'funny' pk=funny.pk %}">
+																	                <iframe width="350" height="250" src="{{ funny.video_embed_code }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+																	</a>
+																	            </div>
+																	            <div class="desc">
+																	              <div class="post-desc-top">
+																	                <h3 class="post-heading">{{ funny.title }}</h3>
+																	              </div>
+																	              <div class="post-desc-bottom">
+																	                <p></p>
+																	                <a class="more-button" href="{% url 'funny' pk=funny.pk %}"><span>Read More</span></a>
+																	              </div>
+																	            </div>
+																	          </article>
+																	        </div>
+
+																	        <div class="home-post-list">
+																	            <!-- POST START -->
+																	            <article class="post format-standard">
+																	                                <div class="image">
+																	                <a href="{% url 'programming' pk=programming.pk %}"><img src="{{ programming.picture.url }}" alt="{{ programming.title }}" /></a>
+																	              </div>
+																	              <div class="desc">
+																	                <div class="post-desc-top">
+																	                  <h3 class="post-heading">{{ programming.title }} </h3>
+																	                </div>
+																	                <div class="post-desc-bottom">
+																	                  <p></p>
+																	                  <a class="more-button" href="{% url 'programming' pk=programming.pk %}"><span>Read More</span></a>
+																	                </div>
+																	              </div>
+																	            </article>
+																	          </div>
+
+
+
+
+
+
+
+			      </div>
+				  <div class="clr"></div>
+				  <p>&nbsp; </p> </div><!-- POST END -->
+							<!--Fashion Update Starts-->
+
+              <!--Fashion Update Ends-->
+
+                            <!-- ADVERT START -->
+
+							<!-- ADVERT END -->
+							<!-- PAGINATION START -->
+
+							<!-- PAGINATION END -->
+						</div>
+                     </div>
+						<!-- SITE CONTENT LEFT END -->
+						<!-- SITE CONTENT RIGHT START -->
+						<div class="col-sm-4 col-xs-12 site-content-right">
+							<aside class="sidebar-right sidebar">
+ <!-- skill_auto -->
+
+ </br>
+								<div class="sidebar-right-wrap widget-box widget_vintaug_latest_latest_posts_widget col-sm-12">
+									<div class="widget-title">
+										<h3 class="bg-heading">Top Rated List
+                                        </h3>
+									</div>
+
+									<!--Links List-2 Ends-->
+
+								</div>
+								<!-- WIDGET END -->
+																<!-- WIDGET START -->
+								<div class="sidebar-right-wrap widget-box widget_text">
+
+<div>
+
+									<div class="col-sm-6 sidebar ">
+									<div class="post-heading">
+											<a href="{% url 'bangla' pk=bangla_jokes.pk %}"><button><h5>{{ bangla_jokes.title }}<h5></button></a>
+										</div>
+										<div class="image">
+											<a href="{% url 'bangla' pk=bangla_jokes.pk %}"><img src="{{ bangla_jokes.picture.url }}" alt="{{ bangla.title }}" width="131" height="160" /></a>
+										</div>
+										<div class="desc">
+											<p></p>
+										</div>
+									</div>
+</div>
+<div>
+
+										<div class="col-sm-6 sidebar ">
+										<div class="post-heading">
+												<a href="{% url 'engineer' pk=engineering_jokes.pk %}"><button><h5>{{ engineering_jokes.title }}<h5></button></a>
+											</div>
+											<div class="image">
+												<a href="{% url 'engineer' pk=engineering_jokes.pk %}"><img src="{{ engineering_jokes.picture.url }}" alt="{{ bangla.title }}" width="131" height="160" /></a>
+											</div>
+											<div class="desc">
+												<p></p>
+											</div>
+										</div>
+
+
+											<div class="col-sm-6 sidebar ">
+											<div class="post-heading">
+													<a href="{% url 'fci' pk=fci_troll.pk %}"><button><h5>{{ fci_troll.title }}<h5></button></a>
+												</div>
+												<div class="image">
+													<a href="{% url 'fci' pk=fci_troll.pk %}"><img src="{{ fci_troll.picture.url }}" alt="{{ bangla.title }}" width="131" height="160" /></a>
+												</div>
+												<div class="desc">
+													<p></p>
+												</div>
+											</div>
+
+
+											<div class="col-sm-6 sidebar  ">
+												<div class="post-heading">
+														<a href="{% url 'funny' pk=funny_videos.pk %}"><button><h5>{{ funny_videos.title }}<h5></button></a>
+													</div>
+													<div class="image">
+														<a href="{% url 'funny' pk=funny_videos.pk %}">
+															<iframe width="200" height="150" src="{{ funny_videos.video_embed_code }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+
+														</a>
+													</div>
+													<div class="desc">
+														<p></p>
+													</div>
+												</div>
+
+
+
+													<div class="col-sm-6 sidebar ">
+													<div class="post-heading">
+															<a href="{% url 'programming' pk=programming_jokes.pk %}"><button><h5>{{ programming_jokes.title }}<h5></button></a>
+														</div>
+														<div class="image">
+															<a href="{% url 'programming' pk=programming_jokes.pk %}"><img src="{{ programming_jokes.picture.url }}" alt="{{ bangla.title }}" width="131" height="160" /></a>
+														</div>
+														<div class="desc">
+															<p></p>
+														</div>
+													</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                                </div>
+
+                                <!-- WIDGET START -->
+
+								<!-- WIDGET END -->
+							</aside>
+						</div>
+						<!-- SITE CONTENT RIGHT END -->
+					</div>
+					<!-- HOME CONTENT END -->
+				</div>
+			</div>
+			</div>
+
+ {% endblock %}

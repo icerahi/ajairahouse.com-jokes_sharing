@@ -1,0 +1,95 @@
+.jqueryslidemenu {
+	font-size:13px;
+	/*font-weight:bold;*/
+	/*background:#444;*/
+	width:100%;
+	}
+
+.jqueryslidemenu ul {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	}
+
+/*Top level list items*/
+.jqueryslidemenu ul li {
+	position:relative;
+	display:inline;
+	/*float:left;*/
+	z-index:10;	/* !IMPORTANT */
+	margin-left:-5px;
+	}
+
+/*Top level menu link items style*/
+.jqueryslidemenu ul li a {
+	display:block;
+	/*background:#f9f9f9;*/ /*background of tabs (default state)*/
+	padding:9px 20px 8px 20px;
+	border-right:#111 1px solid;
+	text-decoration:none;
+	background:transparent;
+	color:#ddd;
+	cursor:pointer;
+	text-align:center;
+	}
+
+/*IE6 hack to get sub menu links to behave correctly*/
+* html .jqueryslidemenu ul li a {display:inline-block;margin:0;}
+
+.jqueryslidemenu ul li a:link, .jqueryslidemenu ul li a:visited {}
+
+.jqueryslidemenu ul li a:hover {color:#fff;}
+	
+/*1st sub level menu*/
+.jqueryslidemenu ul li ul {
+	position:absolute;
+	left:0;
+	display:block;
+	visibility:hidden;
+	}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.jqueryslidemenu ul li ul li {
+	display:list-item;
+	float:none;
+	top:2px;	/* altezza da top del dropdown menu */
+	margin-left:0;
+	}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.jqueryslidemenu ul li ul li ul {margin-top:-25px;}
+
+/* Sub level menu links style */
+.jqueryslidemenu ul li ul li a {
+	font-size:12px;
+	width:140px; /*width of sub menus*/
+	/*padding:8px 8px 8px 15px;*/
+	margin:0;
+	border-top-width:0;
+	border-top:#222 1px solid;
+	background:#111;
+	text-align:left;
+	}
+	
+.jqueryslidemenu ul li ul li a:hover {
+	background:#222;
+	color:#eee;
+	}
+	
+.jqueryslidemenuz ul li ul li a:hover {/*sub menus hover style*/}
+
+
+/* CSS classes applied to down and right arrow images
+----------------------------------------------------------------------------------------------------*/
+
+.downarrowclass {
+	position:absolute;
+	top:15px;
+	right:7px;
+	}
+
+.rightarrowclass {
+	position:absolute;
+	top:10px;
+	right:10px;
+	}

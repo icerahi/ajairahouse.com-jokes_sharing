@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+<div class="site-content-wrapper">
+			<div class="container">
+            	<!-- CATEGORY TITLE START -->
+				<section class="category-archive-title">
+				<h1>Category: <span> {{ category }}</span></h1>
+				</section>
+				<!-- CATEGORY TITLE END -->
+				<div class="row">
+					<!-- HOME CONTENT START -->
+					<div class="home-content">
+						<!-- SITE CONTENT LEFT START -->
+						<div class="col-sm-8 col-xs-12 site-content-left">
+
+                            <!-- POST LIST START -->
+										<div class="gall" >
+							<div class="home-two-post-list">
+				                <!-- POST START -->
+                                <div id="page_contents">
+
+{% for content in contents %}
+<div class="home-post-list">
+		<!-- POST START -->
+
+		<article class="post format-standard">
+												<div class="image">
+<a href="{% url 'funny' pk=content.pk %}">
+	<div id="fb-root"></div>
+	<script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+
+	<!-- Your embedded video player code -->
+	<div class="fb-video" data-href="{{ content.video_embed_code|safe }}" data-width="400" data-show-text="false">
+
+	</div>
+  </a>
+  	</div>
+			<div class="desc">
+				<div class="post-desc-top">
+					<h3 class="post-heading">{{ content.title }}</h3>
+				</div>
+				<div class="post-desc-bottom">
+					<p></p>
+					<a class="more-button" href="{% url 'funny' pk=content.pk %}"><span>Read More</span></a>
+				</div>
+			</div>
+		</article>
+
+		</div>
+
+		{% empty %}
+		<h3>There is no result found for '{{ request.GET.q }}'</h3>
+
+{% endfor %}
+
+
+			      </div>
+
+						<div class="pagination">
+				<span class="step-links">
+						{% if contents.has_previous %}
+						<a href="?page=1">&laquo;<button type="button" name="button">first</button> </a>
+						 <a href="?page={{ contents.previous_page_number }}"><button type="button" name="button">previous</button></a>
+						{% endif %}
+
+						<span class="current">
+								Page {{ contents.number }} of {{ contents.paginator.num_pages }}.
+						</span>
+
+						{% if contents.has_next %}
+								<a href="?page={{ contents.next_page_number }}"><button type="button" name="button">next</button> </a>
+								 <a href="?page={{ contents.paginator.num_pages }}"><button type="button" name="button">last</button>  &raquo;</a>
+						{% endif %}
+				</span>
+		</div>
+				  <div class="clr"></div>
+				  <p>&nbsp; </p> </div><!-- POST END -->
+							<!--Fashion Update Starts-->
+
+              <!--Fashion Update Ends-->
+
+                            <!-- ADVERT START -->
+
+							<!-- ADVERT END -->
+							<!-- PAGINATION START -->
+
+							<!-- PAGINATION END -->
+						</div>
+                     </div>
+						<!-- SITE CONTENT LEFT END -->
+						<!-- SITE CONTENT RIGHT START -->
+						<div class="col-sm-4 col-xs-12 site-content-right">
+							<aside class="sidebar-right sidebar">
+ <!-- skill_auto -->
+
+ </br>
+								<div class="sidebar-right-wrap widget-box widget_vintaug_latest_latest_posts_widget col-sm-12">
+									<div class="widget-title">
+										<h3 class="bg-heading">Most View {{ category }} list
+                                        </h3>
+									</div>
+
+									<!--Links List-2 Ends-->
+
+								</div>
+								<!-- WIDGET END -->
+																<!-- WIDGET START -->
+								<div class="sidebar-right-wrap widget-box widget_text">
+									{% for content in funny %}
+                 <div class="col-sm-6">
+                	<div class="post-heading">
+                    	<a href="{% url 'funny' pk=content.pk %}"><button><h5>{{ content.title }}<h5></button></a>
+                    </div>
+                    <div class="image">
+											<iframe width="200" height="150" src="{{ content.video_embed_code }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+
+                    </div>
+                    <div class="desc">
+                    	<p></p>
+                    </div>
+
+                </div>
+								{% endfor %}
+
+
+
+
+
+
+
+
+
+
+                                </div>
+
+                                <!-- WIDGET START -->
+
+								<!-- WIDGET END -->
+							</aside>
+						</div>
+						<!-- SITE CONTENT RIGHT END -->
+					</div>
+					<!-- HOME CONTENT END -->
+				</div>
+			</div>
+		</div>
+ {% endblock %}
